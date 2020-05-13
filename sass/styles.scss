@@ -1,0 +1,190 @@
+@import "buttons";
+
+body{
+  color: #5B6E80;
+  background-color: #fefefe;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #00083D;
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  margin: 5% auto;
+  border-style: dotted;
+  border-width: 10px 0 0 0;
+  width: 5%;
+  color: #5B6E80;
+}
+
+// Navigation Bar
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 6% 5% 6%;
+  box-shadow: 0 0 6px 0.2px rgba(0, 0, 0, 0.08);
+
+  h3 {
+    a {
+      color: #0062FF;
+      font-size: 3rem;
+    }
+  }
+
+  ul {
+    display: none;
+    list-style-type: none;
+    position: relative;
+    left: 80px;
+
+    li {
+      font-size: 2.5rem;
+      padding: 14px;
+      font-weight: 400;
+      display: block;
+    }
+
+    a {
+      display: block;
+      color: #5B6E80;
+    }
+
+    .contact {
+      color: #0062FF;
+    }
+  }
+
+  #menu-icon{
+    color: #5B6E80;
+    width: 8%;
+    position: absolute;
+    right: 6%;
+    top: 3.5%;
+  }
+}
+
+// First Section
+#first-section {
+  padding: 12% 6% 0 6%;
+  text-align: center;
+
+  .first-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .first-section-content {
+      h1 {
+        margin: 0;
+        padding: 0 5% 0 5%;
+        line-height: 6.6rem;
+        font-size: 5.3rem;
+      }
+
+      .hello {
+        font-size: 2.5rem;
+        padding-bottom: 2%;
+      }
+
+      .brief-info {
+        padding: 0 0 5% 0;
+        line-height: 4.5rem;
+        font-size: 2.5rem;
+      }
+
+      .about {
+        color: #0062FF;
+        font-size: 2rem;
+
+
+      }
+    }
+    img {
+      width: 70%;
+      margin: 20% 0 20% 0;
+    }
+  }
+}
+
+// Second Section
+#second-section {
+  padding: 8% 6% 0 6%;
+  text-align: center;
+
+  .second-section-container {
+    img {
+      width: 15%;
+      padding: 6% 0 0 0;
+    }
+
+    h2 {
+      font-size: 4.5rem;
+      padding-bottom: 6%;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+// Fifth Section
+#fifth-section {
+  padding: 8% 6% 0 6%;
+  text-align: center;
+
+  .fifth-section-container {
+    .contact1 {
+      h3 {
+        font-size: 3rem;
+        margin: 5% 10%;
+        line-height: 5rem;
+      }
+
+      p {
+        color: #0062FF;
+        font-size: 2.5rem;
+        padding-bottom: 6%;
+      }
+    }
+
+    .contact2 {
+      padding: 12% 0;
+      p {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+// Last Section
+#last-section {
+  color: #fff;
+  padding: 20% 6% 10% 6%;
+  text-align: center;
+  background-color: #153A82;
+
+  .last-section-container {
+    a {
+      color: #fff;
+      font-size: 4rem;
+      padding: 8% 2.5%;
+    }
+
+    p {
+      color: #868E96;
+      padding-top: 8%;
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+}
