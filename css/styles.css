@@ -12,6 +12,11 @@
   transform: scale(0.95);
 }
 
+* ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 body {
   color: #5B6E80;
   background-color: #fefefe;
@@ -48,7 +53,6 @@ nav h3 a {
 }
 nav ul {
   display: none;
-  list-style-type: none;
   position: relative;
   left: 80px;
 }
@@ -71,6 +75,9 @@ nav #menu-icon {
   position: absolute;
   right: 6%;
   top: 3.5%;
+}
+nav .pressed {
+  opacity: 0.5;
 }
 
 #first-section {
@@ -107,20 +114,70 @@ nav #menu-icon {
   margin: 20% 0 20% 0;
 }
 
+.section-header {
+  font-size: 4.5rem;
+  padding-bottom: 6%;
+}
+
 #second-section {
-  padding: 8% 6% 0 6%;
+  padding: 8% 6% 8% 6%;
   text-align: center;
 }
 #second-section .second-section-container img {
   width: 15%;
   padding: 6% 0 0 0;
 }
-#second-section .second-section-container h2 {
-  font-size: 4.5rem;
-  padding-bottom: 6%;
-}
 #second-section .second-section-container h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 7%;
+}
+#second-section .second-section-container ul {
+  margin-bottom: 7%;
+}
+#second-section .second-section-container ul li {
+  padding: 2% 0;
+  margin: 0;
+}
+
+.fourth-section {
+  padding: 15% 10%;
+  text-align: center;
+}
+.fourth-section .fourth-section-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fourth-section .fourth-section-container ul li {
+  margin: 3%;
+}
+.fourth-section .fourth-section-container ul li .box-sm {
+  padding: 20% 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 320px;
+  height: 320px;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.05), 0 0 12px 0 rgba(0, 0, 0, 0.1);
+}
+.fourth-section .fourth-section-container ul li .box-sm img {
+  width: 50%;
+}
+.fourth-section .fourth-section-container ul li .box-sm .sql {
+  width: 40%;
+}
+.fourth-section .fourth-section-container ul li .box-sm .mongodb {
+  width: 75%;
+  padding-bottom: 30px;
+}
+.fourth-section .fourth-section-container ul li .box-sm p {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 #fifth-section {

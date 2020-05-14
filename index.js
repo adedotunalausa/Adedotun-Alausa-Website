@@ -1,8 +1,9 @@
 
 function myFunction() {
 
-  var myLinks = document.getElementById("my-links");
-  var myName = document.getElementById("my-name");
+  const myLinks = document.getElementById("my-links");
+  const myName = document.getElementById("my-name");
+  const menuIcon = document.getElementById("menu-icon");
 
   if (myLinks.style.display === "block") {
     myLinks.style.display = "none";
@@ -11,4 +12,14 @@ function myFunction() {
     myLinks.style.display = "block";
     myName.innerHTML = "Adedotun <br> Alausa";
   }
+
+  function iconClick() {
+    menuIcon.classList.add("pressed");
+
+    setTimeout(function() {
+    menuIcon.classList.remove("pressed");
+  }, 200);
+  }
+
+  menuIcon.addEventListener("click", iconClick);
 }
