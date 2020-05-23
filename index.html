@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Adedotun Alausa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Adedotun Alausa</title>
 
   <link rel="icon" href="A.ico">
 
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 
   <script src="https://kit.fontawesome.com/0e582f6ddb.js" crossorigin="anonymous"></script>
 </head>
@@ -17,25 +19,36 @@
 <body>
   <nav>
     <div class="nav-container">
-      <h3><a id="my-name" href="index.html">Adedotun</a></h3>
-      <div class="toggle-container">
-        <div class="light toggle-container-btn" type="button" name="button">
-          <img src="images/sun-icon.png" alt="">
-        </div>
-        <div class="dark toggle-container-btn" type="button" name="button">
-          <img src="images/moon-icon.png" alt="">
-        </div>
+      <div class="logo-wrapper">
+        <span><a class="my-name scroll" href="#first-section">Adedotun</a></span>
+        <span><a class="my-surname scroll" href="#first-section">Alausa</a></span>
       </div>
-      <div class="menu-btn">
-        <div class="menu-btn-burger"></div>
+      <div class="btn-ham-container">
+        <div class="toggle-container">
+          <div class="light toggle-container-btn" type="button" name="button">
+            <img src="images/sun-icon.png" alt="">
+          </div>
+          <div class="dark toggle-container-btn" type="button" name="button">
+            <img src="images/moon-icon.png" alt="">
+          </div>
+        </div>
+        <div class="menu-btn hidden">
+          <div class="menu-btn-burger"></div>
+        </div>
       </div>
     </div>
 
     <div>
       <ul class="menu-items">
-        <a class="scroll hide-menu" href="#capabilities"><li>Projects</li></a>
-        <a class="scroll hide-menu" href="#capabilities"><li>Capabilities</li></a>
-        <a class="contact scroll hide-menu" href="mailto:adedotunalausa@gmail.com"><li>Contact</li></a>
+        <a class="scroll hide-menu" href="#capabilities">
+          <li>Projects</li>
+        </a>
+        <a class="scroll hide-menu" href="#capabilities">
+          <li>Abilities</li>
+        </a>
+        <a class="contact scroll hide-menu" href="#fifth-section">
+          <li>Contact</li>
+        </a>
       </ul>
       <div class="menu-items-bg"></div>
     </div>
@@ -47,14 +60,14 @@
 
       <div class="first-section-content">
         <p class="hello fade-in">Hello, I'm Adedotun 👋🏼</p>
-        <h1 class="fade-in">An Engineer, a Data Scientist and a Web Developer</h1>
+        <h1 class="fade-in">An Engineer, a Data <br> Scientist & a Web developer</h1>
         <p class="brief-info fade-in">
           I combine knowledge and experience from these 3
           fields in helping users and businesses reach their goals,
           leveraging on the power of Range!
         </p>
         <a class="about fade-in scroll" href="#capabilities">More about me</a>
-        <a class="btn-first-section fade-in scroll" href="#">View my work</a>
+        <a class="btn fade-in scroll" href="#">View my work</a>
       </div>
 
       <img class="fade-in" src="images/adedotun.png" alt="Adedotun-image">
@@ -65,9 +78,8 @@
 
   <!-- Second Section -->
   <section id="capabilities">
+    <h2 class=" fade-in">Abilities</h2>
     <div class="second-section-container">
-      <h2 class="section-header fade-in">Capabilities</h2>
-
       <div>
         <img class="engineering-img fade-in" src="images/inspection.png" alt="engineering-img">
         <h3 class="fade-in">Engineering Design</h3>
@@ -76,7 +88,7 @@
           <li>Static Equipment Design</li>
           <li>Pipe Stress Analysis</li>
           <li>3D Modelling</li>
-          <li>Drafting</li>
+          <li>2D Drafting</li>
         </ul>
       </div>
 
@@ -99,10 +111,10 @@
           <li>Front-end Development</li>
           <li>Back-end Development</li>
           <li>Responsive & Mobile Websites</li>
+          <li>Web Applications</li>
           <li>Platform Solutions</li>
         </ul>
       </div>
-
     </div>
   </section>
 
@@ -110,45 +122,126 @@
 
   <section class="fourth-section">
     <div class="fourth-section-container">
-      <h2 class="section-header fade-in">SKills & Tools</h2>
-      <ul class="row fade-in">
-        <li>
-          <div class="box-sm col-md-4 col-sm-6">
+      <h2 class=" fade-in">SKills & Tools</h2>
+      <span class="btn-tech">Web Dev</span>
+      <div class="row fade-in tools-container">
+        <div class="box" id="box1">
+          <div class="box-inner">
             <img src="images/Sass-logo.png" alt="sass-image">
             <p>Sass</p>
           </div>
-        </li>
-        <li>
-          <div class="box-sm col-md-4 col-sm-6">
+        </div>
+        <div class="box" id="box2">
+          <div class="box-inner">
             <img src="images/nodejs-logo.png" alt="node-image">
             <p>NodeJs</p>
           </div>
-        </li>
-        <li>
-          <div class="box-sm col-md-4 col-sm-6">
+        </div>
+        <div class="box" id="box3">
+          <div class="box-inner">
             <img src="images/php-logo.png" alt="php-image">
             <p>php</p>
           </div>
-        </li>
-        <li>
-          <div class="box-sm col-md-4 col-sm-6">
-            <img  class="express" src="images/expressjs-logo.png" alt="express-image">
+        </div>
+        <div class="box" id="box4">
+          <div class="box-inner">
+            <img class="express" src="images/expressjs-logo.png" alt="express-image">
             <p>ExpressJs</p>
           </div>
-        </li>
-        <li>
-          <div class="box-sm col-md-4 col-sm-6">
-            <img  class="sql" src="images/sql-logo.png" alt="express-image">
+        </div>
+        <div class="box" id="box5">
+          <div class="box-inner">
+            <img class="sql" src="images/sql-logo.png" alt="sql-image">
             <p>SQL</p>
           </div>
-        </li>
-        <li>
-          <div class="box-sm col-md-4 col-sm-6">
-            <img  class="mongodb" src="images/mongodb-logo.png" alt="express-image">
+        </div>
+        <div class="box" id="box6">
+          <div class="box-inner">
+            <img class="mongodb" src="images/mongodb-logo.png" alt="mongo-image">
             <p>mongoDB</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      <span class="btn-tech">Data Science</span>
+      <div class="row fade-in tools-container">
+        <div class="box" id="box1">
+          <div class="box-inner">
+            <img src="images/python-logo.png" alt="sass-image">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="box" id="box1">
+          <div class="box-inner">
+            <img src="images/pandas-logo.png" alt="sass-image">
+            <p>Pandas</p>
+          </div>
+        </div>
+        <div class="box" id="box2">
+          <div class="box-inner">
+            <img src="images/tableau-logo.png" alt="node-image">
+            <p>Tableau</p>
+          </div>
+        </div>
+        <div class="box" id="box3">
+          <div class="box-inner">
+            <img src="images/numpy-logo.png" alt="php-image">
+            <p>Numpy</p>
+          </div>
+        </div>
+        <div class="box" id="box3">
+          <div class="box-inner">
+            <img src="images/scikitlearn-logo.png" alt="php-image">
+            <p>Scikit Learn</p>
+          </div>
+        </div>
+        <div class="box" id="box4">
+          <div class="box-inner">
+            <img class="express" src="images/matplotlib-logo.svg" alt="express-image">
+            <p>Matplotlib</p>
+          </div>
+        </div>
+        <div class="box" id="box5">
+          <div class="box-inner">
+            <img class="sql" src="images/seaborn-logo.png" alt="sql-image">
+            <p>Seaborn</p>
+          </div>
+        </div>
+      </div>
+
+      <span class="btn-tech">Engineering</span>
+      <div class="row fade-in tools-container engineering">
+        <div class="box" id="box1">
+          <div class="box-inner">
+            <img src="images/pdms-logo.png" alt="sass-image">
+            <p>PDMS</p>
+          </div>
+        </div>
+        <div class="box" id="box2">
+          <div class="box-inner">
+            <img src="images/caesar-logo.jpg" alt="node-image">
+            <p>Caesar II</p>
+          </div>
+        </div>
+        <div class="box" id="box3">
+          <div class="box-inner">
+            <img src="images/plant3d-logo.png" alt="php-image">
+            <p>AutoCAD <br> Plant 3D</p>
+          </div>
+        </div>
+        <div class="box" id="box4">
+          <div class="box-inner">
+            <img class="express" src="images/msproject-logo.png" alt="express-image">
+            <p>Microsoft Project</p>
+          </div>
+        </div>
+        <div class="box" id="box5">
+          <div class="box-inner">
+            <img class="sql" src="images/matlab-logo.png" alt="sql-image">
+            <p>MATLAB</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -159,26 +252,32 @@
       <div class="contact1">
         <h3 class="fade-in">Have ideas flooding your mind and would love to see them come alive?</h3>
         <p class="fade-in">Let's discuss and create amazing solutions to problems.</p>
-        <a class="btn-fifth-section fade-in" href="mailto:adedotunalausa@gmail.com">Contact Me</a>
+        <a class="btn fade-in" href="mailto:adedotunalausa@gmail.com">Send an email</a>
       </div>
       <div class="contact2">
-        <p class="fade-in">+234(0)8139649118</p>
+        <p class="fade-in">+234 813 964 9118</p>
         <p class="fade-in">adedotunalausa@gmail.com</p>
       </div>
     </div>
   </section>
 
-  <section id="last-section">
+  <footer id="last-section">
     <div class="last-section-container">
-      <a class="footer-link fade-in" href="https://www.linkedin.com/in/adedotun-alausa"><i class="fab fa-linkedin"></i></a>
-      <a class="footer-link fade-in" href="https://github.com/adedotunalausa"><i class="fab fa-github"></i></a>
-      <a class="footer-link fade-in" href="https://www.instagram.com/mousebrushstudio/"><i class="fab fa-instagram"></i></a>
-      <p class="copyright">© 2020 Adedotun Alausa</p>
+      <div class="social-media">
+        <a class="footer-link fade-in" href="https://www.linkedin.com/in/adedotun-alausa"><i class="fab fa-linkedin"></i></a>
+        <a class="footer-link fade-in" href="https://github.com/adedotunalausa"><i class="fab fa-github"></i></a>
+        <a class="footer-link fade-in" href="https://www.instagram.com/mousebrushstudio/"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-right">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <p class="copyright">© 2020 Adedotun Alausa</p>
+      </div>
     </div>
-  </section>
+  </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 
 </body>
 

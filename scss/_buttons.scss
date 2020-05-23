@@ -1,11 +1,13 @@
 %btn {
-  border-radius: 20px;
-  padding: 3% 6%;
-  margin: 2% 4%;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin: 0.75rem 0.8rem;
+  text-align: center;
   color: #fff;
-  font-size: 1.5rem;
-  background-image: linear-gradient(90deg,#011B8A,#0062ff);
-  box-shadow: 0 5px 10px 0.3px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: 700;
+  background-image: linear-gradient(90deg,#22A39F,#50B8E7);
+  box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
   cursor: pointer;
 
   &:hover {
@@ -13,12 +15,13 @@
   }
 }
 
-.btn-first-section {
+.btn {
   @extend %btn;
 }
 
-.btn-fifth-section {
+.btn-tech {
   @extend %btn;
+  padding: .6rem 2rem;
 }
 
 .toggle-container {
@@ -26,20 +29,18 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,.07);
-  padding: 10px;
+  padding: 4px;
   position: relative;
   outline: none;
   cursor: pointer;
-  border-radius: 80px;
+  border-radius: 12px;
   box-sizing: border-box;
-  margin-left: 200px;
+  // margin-left: 200px;
 
   .toggle-container-btn {
     color: #4a5568;
-    width: 100px;
-    height: 100px;
     box-sizing: border-box;
-    border-radius: 100%;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,8 +48,11 @@
 
   .light {
     background-color: #fff;
-    margin-right: 20px;
+    width: 40px;
+    height: 34px;
+    margin-right: 4px;
     box-shadow: 0 5px 10px 0.3px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
 
     img {
       width: 50%;
@@ -57,11 +61,35 @@
   }
 
   .dark {
+    width: 40px;
+    height: 34px;
     img {
       width: 40%;
       filter: opacity(50%);
     }
   }
+}
 
+@media screen and (min-width: 768px) {
+  %btn {
+    padding: 1rem 1.4rem;
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+  }
 
+  .btn-tech {
+    @extend %btn;
+    padding: .6rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  %btn {
+    font-size: 1.2rem;
+  }
+
+  .btn-tech {
+    @extend %btn;
+    padding: .6rem 2rem;
+  }
 }
