@@ -61,18 +61,9 @@
 
 @media screen and (min-width: 768px) {
   .btn, .btn-tech {
-    padding: 1rem 1.4rem;
+    padding: 1rem 1.2rem;
     margin: 0.75rem 0;
-    font-size: 1.1rem;
-  }
-
-  .btn-tech {
-    padding: 0.6rem 2rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .btn, .btn-tech {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .btn-tech {
@@ -300,7 +291,7 @@ nav .menu-items.hide {
 }
 #first-section .first-section-container img {
   width: 20rem;
-  margin: 4rem 0;
+  margin-top: 3rem;
 }
 
 #capabilities {
@@ -372,6 +363,15 @@ nav .menu-items.hide {
 }
 .fourth-section .fourth-section-container .tools-container .box .box-inner .express {
   width: 5rem;
+}
+.fourth-section .fourth-section-container .tools-container .box .box-inner .css, .fourth-section .fourth-section-container .tools-container .box .box-inner .js, .fourth-section .fourth-section-container .tools-container .box .box-inner .jq, .fourth-section .fourth-section-container .tools-container .box .box-inner .seaborn {
+  width: 2.2rem;
+}
+.fourth-section .fourth-section-container .tools-container .box .box-inner .git, .fourth-section .fourth-section-container .tools-container .box .box-inner .node, .fourth-section .fourth-section-container .tools-container .box .box-inner .numpy, .fourth-section .fourth-section-container .tools-container .box .box-inner .scikit {
+  width: 4rem;
+}
+.fourth-section .fourth-section-container .tools-container .box .box-inner .python, .fourth-section .fourth-section-container .tools-container .box .box-inner .pandas, .fourth-section .fourth-section-container .tools-container .box .box-inner .tableau, .fourth-section .fourth-section-container .tools-container .box .box-inner .matplot, .fourth-section .fourth-section-container .tools-container .box .box-inner .pdms, .fourth-section .fourth-section-container .tools-container .box .box-inner .caesar {
+  width: 5.5rem;
 }
 .fourth-section .fourth-section-container .tools-container .box .box-inner p {
   display: block;
@@ -511,7 +511,7 @@ nav .menu-items.hide {
     margin-right: 1.5rem;
   }
   #first-section .first-section-container img {
-    width: 20rem;
+    width: 25rem;
   }
 
   #capabilities .second-section-container {
@@ -601,6 +601,9 @@ nav .menu-items.hide {
   }
   #first-section .first-section-container .first-section-content .about {
     font-size: 1.25rem;
+  }
+  #first-section .first-section-container img {
+    margin-right: 2rem;
   }
 
   #capabilities {

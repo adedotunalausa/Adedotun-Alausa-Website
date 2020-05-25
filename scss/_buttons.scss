@@ -72,20 +72,9 @@
 
 @media screen and (min-width: 768px) {
   %btn {
-    padding: 1rem 1.4rem;
+    padding: 1rem 1.2rem;
     margin: 0.75rem 0;
-    font-size: 1.1rem;
-  }
-
-  .btn-tech {
-    @extend %btn;
-    padding: .6rem 2rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  %btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .btn-tech {
