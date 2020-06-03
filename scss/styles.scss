@@ -23,7 +23,7 @@ body{
 }
 
 h1, h2, h3 {
-  color: #00083D;
+  color: #222831;
 }
 
 a{
@@ -32,15 +32,20 @@ a{
 
 hr{
   margin: 1.5rem auto;
-  border-style: dotted;
+  border-style: solid;
   border-width: .3rem 0 0 0;
-  width: 2rem;
+  width: 100%;
   color: #5B6E80;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.underline:hover {
+  transform: scale(.90);
+  margin-bottom: .5rem;
 }
 
 // Navigation Bar
@@ -54,18 +59,22 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-    box-shadow: 0 3px 4px 0 rgba(0,0,0,.05), 0 -1px 0 0 rgba(0,0,0,.08);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
     background-color: #fff;
 
     .logo-wrapper {
       a {
         color: #22A39F;
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 700;
       }
       .my-surname {
         display: none;
       }
+    }
+
+    .menu-items2 {
+      display: none;
     }
 
     .btn-ham-container {
@@ -90,7 +99,7 @@ nav {
       .menu-btn-burger {
         width: 26px;
         height: 2px;
-        background: #50B8E7;
+        background: #27496d;
         border-radius: 5px;
         transition: all .5s ease-in-out;
       }
@@ -99,7 +108,7 @@ nav {
         content: "";
         position: absolute;
         height: 2px;
-        background: #50B8E7;
+        background: #27496d;
         border-radius: 5px;
         transition: all .5s ease-in-out;
       }
@@ -148,8 +157,8 @@ nav {
     -webkit-font-smoothing: antialiased;
 
     li {
-      font-size: 1.3rem;
-      padding: 1rem 0;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
       font-weight: 400;
       transition: all .5s ease-in-out;
 
@@ -161,7 +170,11 @@ nav {
     }
 
     .contact {
-      color: #22A39F;
+      color: #fff;
+
+      li {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -257,10 +270,9 @@ nav {
         color: #22A39F;
         font-size: 1rem;
         font-weight: 700;
-
-
       }
     }
+
     img {
       width: 20rem;
       margin-top: 3rem;
@@ -270,7 +282,8 @@ nav {
 
 // Second Section
 #capabilities {
-  padding: 3rem 1.5rem 2rem 1.5rem;
+  background-color: #EEEEEE;
+  padding: 4.5rem 1.5rem 3.5rem 1.5rem;
   text-align: center;
 
   h2 {
@@ -304,10 +317,12 @@ nav {
 
 // Fourth Section
 .fourth-section {
-  padding: 3rem 1rem 1.5rem;
+  padding: 5rem 1rem 1.5rem;
   text-align: center;
+  background-color: #222831;
 
   .fourth-section-container {
+    margin-bottom: 5rem;
     h2 {
       font-size: 2rem;
       margin-bottom: 2.5rem;
@@ -320,7 +335,7 @@ nav {
       justify-content: center;
       align-items: center;
       margin-top: 2.5rem;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
 
       .box {
         display: flex;
@@ -412,9 +427,9 @@ nav {
 // Last Section
 #last-section {
   color: #fff;
-  padding: 3rem 1.5rem;
+  padding: 6rem 1.5rem;
   text-align: center;
-  background-color: #434242;
+  background-color: #222831;
 
   .last-section-container {
     .social-media {
@@ -486,6 +501,30 @@ nav {
 @media screen and (min-width: 768px) {
   nav {
     .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu-items2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10rem;
+
+        a {
+          color: #5B6E80;
+        }
+
+        li {
+          font-size: 1rem;
+          padding: 0 1rem;
+        }
+
+        .contact {
+          color: #fff;
+        }
+      }
+
       .btn-ham-container {
         .hidden {
           display: none;
@@ -494,23 +533,7 @@ nav {
     }
 
     .menu-items {
-      display: flex;
-      flex-direction: row;
-      margin-top: 0;
-      padding: 0 1rem;
-      position: relative;
-      bottom: 2.6rem;
-      left: 6rem;
-      background: transparent;
-
-      li {
-        font-size: 1.2rem;
-        padding: 0 1rem;
-      }
-
-      .contact {
-        color: #50B8E7;
-      }
+      display: none;
     }
   }
 
@@ -554,7 +577,6 @@ nav {
         }
       }
       img {
-        // background-repeat: url("images/adedotun3.png");
         width: 25rem;
       }
     }
@@ -562,6 +584,8 @@ nav {
 
   // Second Section
   #capabilities {
+    padding: 4rem 0;
+
     .second-section-container {
       display: flex;
       justify-content: space-around;
@@ -579,7 +603,7 @@ nav {
 
   // Fifth Section
   #fifth-section {
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem;
 
     .fifth-section-container {
       display: flex;
@@ -635,20 +659,19 @@ nav {
 @media screen and (min-width: 900px) {
   nav {
     .nav-container {
-      padding: 1.2rem 4.5rem 1.2rem 4.5rem;
-    }
+      padding: .8rem 4.5rem .8rem 4.5rem;
 
-    .menu-items {
-      bottom: 3rem;
-      left: 10rem;
-
-      li {
-        font-size: 1.2rem;
-        padding: 0 1.5rem;
+      .logo-wrapper {
+        a {
+          font-size: 1.2rem;
+        }
       }
 
-      .contact {
-        color: #50B8E7;
+      .menu-items2 {
+        li {
+          font-size: 1.1rem;
+          padding: 0 1.5rem;
+        }
       }
     }
   }
@@ -727,11 +750,13 @@ nav {
 @media screen and (min-width: 1024px) {
   nav {
 
-    .menu-items {
-      left: 12rem;
+    .nav-container {
+      .menu-items2 {
+        margin-left: 20rem;
 
-      li {
-        font-size: 1.3rem;
+        li {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -765,8 +790,11 @@ nav {
 
 @media screen and (min-width: 1240px) {
   nav {
-    .menu-items {
-      left: 17rem;
+
+    .nav-container {
+      .menu-items2 {
+        margin-left: 30rem;
+      }
     }
   }
 
